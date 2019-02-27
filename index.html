@@ -37,6 +37,18 @@
 
             }
         });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
     </script>
 
     <!-- tooltip -->
@@ -92,7 +104,10 @@
                     </center>
                 </div>
                 <div class="col s12 m6">
-                    <h3 class="montserrat"><i class="material-icons md-36">info</i> ¿Quién soy?</h3>
+                    <div class="titulo-info"><i class="material-icons md-48">info</i>
+                        <h3 class="montserrat"> ¿Quién soy?</h3>
+                    </div>
+
                     <p class="quiensoy roboto">¡Hola! Soy Óscar, vivo en Madrid y soy un estudiante en la Escuela
                         Técnica Superior de Ingeniería de Sistemas Informaticos, apasionado por la tecnología, la
                         programación y el desarrollo web y el diseño en Photoshop
@@ -112,7 +127,7 @@
             <div class="row">
                 <div class="col s12">
                     <center>
-                        <h3 class="montserrat"><i class="material-icons md-36">school</i> Cursos realizados</h3>
+                        <h3 class="montserrat"><i class="material-icons md-48">school</i> Cursos realizados</h3>
                     </center>
                     <div class="row">
                         <div class="col s12 m6">
@@ -132,8 +147,8 @@
                                                     &nbsp;Noviembre de 2018</span>
                                             </div>
                                             <p>Durante noviembre del año pasado gracias a Samsung y a la Universidad
-                                                Politécnica de Madrid me formé en el desarrollo web, aprendiendo el
                                                 funcionamiento de nodejs, gestiones de paquetes con npm, frameworks de
+                                                Politécnica de Madrid me formé en el desarrollo web, aprendiendo el
                                                 node cómo Express, Express Generator y AngularJS utilizando Typescript,
                                                 creacción de un CRUD con las anteriores herramientas, etc...</p>
                                         </center>
@@ -219,6 +234,46 @@
                     </div>
 
                 </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="secciones white">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <center>
+                        <h3 class="montserrat"><i class="material-icons md-48"></i>Mis proyectos</h3>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="row">
+                        <div class="col s12 m7">
+                            <div class="card">
+                                <div class="card-image">
+
+                                    <div class="carousel">
+                                        <a class="carousel-item" href="#one!"><img
+                                                src="https://i.imgur.com/S1fFP1e.png"></a>
+                                        <a class="carousel-item" href="#two!"><img
+                                                src="https://i.imgur.com/LtqSINh.png"></a>
+                                    </div>
+
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6"></div>
 
             </div>
         </div>
