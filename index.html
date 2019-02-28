@@ -39,16 +39,14 @@
         });
 
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems, options);
-        });
-
-        // Or with jQuery
-
         $(document).ready(function () {
             $('.carousel').carousel();
         });
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+
     </script>
 
     <!-- tooltip -->
@@ -245,37 +243,20 @@
                     <center>
                         <h3 class="montserrat"><i class="material-icons md-48"></i>Mis proyectos</h3>
                     </center>
+
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">filter_drama</i>Pokemon GO to Old
+                                Android <span class="badge red">deprecated</span></div>
+                            <div class="collapsible-body"><span>Pokemon Go to Old Android es un programa que hice en la
+                                    salida de Pokemon GO que modifica el apk cambiandote la version minima para jugar
+                                    (Android 4.4.4) a Android 4.X.X</span></div>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="row">
-                        <div class="col s12 m7">
-                            <div class="card">
-                                <div class="card-image">
 
-                                    <div class="carousel">
-                                        <a class="carousel-item" href="#one!"><img
-                                                src="https://i.imgur.com/S1fFP1e.png"></a>
-                                        <a class="carousel-item" href="#two!"><img
-                                                src="https://i.imgur.com/LtqSINh.png"></a>
-                                    </div>
-
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6"></div>
-
-            </div>
         </div>
     </section>
 </body>
