@@ -1,23 +1,29 @@
-body{
-    background-color:white;
+body {
+    background-color: white;
 }
-.nav ul a{
-    color:black!important;
+
+.nav ul a {
+    color: black !important;
 }
-.brand-logo{
-    padding-left:20px!important;
+
+.brand-logo {
+    padding-left: 20px !important;
     font-family: 'Montserrat', sans-serif;
 }
 
-body { margin: 0; }
-
-.texto-negro{
-    color:black!important;
+body {
+    margin: 0;
 }
-#menu{
+
+.texto-negro {
+    color: black !important;
+}
+
+#menu {
     transition: 0.5s;
 }
 
+<<<<<<< HEAD
 .botonsubir{
     border-left: 2px solid #8a0e39;
     border-right: 2px solid #8a0e39;
@@ -25,107 +31,124 @@ body { margin: 0; }
     border-bottom: 2px solid #8a0e39;
 }
 
+=======
+>>>>>>> fdb95b018331102a80c1e3c19e207f0fc6c8afd6
 .affix {
     position: fixed;
-    top:0;
-    width:100%;
-    background-color: rgba(255,255,255,0)!important; 
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0) !important;
 }
 
-.btn-floating i{
-    color:black!important;
+.btn-floating i {
+    color: black !important;
     font-size: 1.9rem;
 }
 
-.secciones{
+.secciones {
     height: auto;
-    padding:40px 20px 40px 20px;
+    padding: 40px 20px 40px 20px;
     display: table;
     width: 100%;
 }
 
-.botones{
-    margin:15px;
+.botones {
+    margin: 15px;
     -webkit-transition: -webkit-transform .9s ease-in-out;
-            transition:         transform .9s ease-in-out;
+    transition: transform .9s ease-in-out;
 }
 
-.botones:hover{
+.botones:hover {
     -webkit-transform: rotate(900deg);
-    transform: rotate(900deg);    
+    transform: rotate(900deg);
 }
 
-.titulo-info{
+.titulo-info {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.md-48{
-    font-size:48px!important;
+
+.titulo-portfolio {
+    font-size: 24px;
+}
+
+ul li{
+    margin-right:15px;
+}
+
+
+
+.md-48 {
+    font-size: 48px !important;
 }
 
 .contenidoprincipal {
-    margin-top:0;
+    margin-top: 0;
     z-index: 0;
     display: table;
-	width:   100%;
-    height:  100vh;
+    width: 100%;
+    height: 100vh;
 
 }
+
 .centrar {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
-.quiensoy{
-    font-size:15px;
+
+.quiensoy {
+    font-size: 15px;
 }
-.fotoperfil{
-    width:200px;
-    height:200px;
+
+.fotoperfil {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    color:white;
-    font-size:120px;
-    text-align:center;
-    padding-top:10px;
-    margin-top:50px;  
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 50px;
 }
 
-.curso-img{
-    margin:auto;
-    display:block;
-    width:150px;
-    height:auto;
-    padding-top:25px;
+.curso-img {
+    margin: auto;
+    display: block;
+    width: 150px;
+    height: auto;
+    padding-top: 25px;
 }
 
-span.curso-info{
-    font-size:12px;
-    color:grey;
+span.curso-info {
+    font-size: 12px;
+    color: grey;
 }
 
-div.curso-info{
-    margin-bottom:5px;
+div.curso-info {
+    margin-bottom: 5px;
 }
 
-nav{
+nav {
     height: 75px;
-    padding-top:5px;
+    padding-top: 5px;
 }
 
-.montserrat{
+.montserrat {
     font-family: 'Montserrat', sans-serif;
 }
-.roboto{
+
+.roboto {
     font-family: 'Roboto', sans-serif;
 }
 
 
-.degradado-bg{
+.degradado-bg {
     background: linear-gradient(45deg, #830a32, #8a0e39);
     background-size: 400% 400%;
-    
+
     -webkit-animation: degradado 30s ease infinite;
     -moz-animation: degradado 30s ease infinite;
     animation: degradado 30s ease infinite;
@@ -134,17 +157,43 @@ nav{
 }
 
 @-webkit-keyframes degradado {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-moz-keyframes degradado {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @keyframes degradado {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }

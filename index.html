@@ -19,9 +19,46 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<<<<<<< HEAD
     <script src="js/scroll-functions.js"></script>
     <script src="js/collapsible.js"></script>
     <script src="js/tooltip.js"></script>
+=======
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 700) {
+                $('#menu').addClass('grey');
+                $('#menu').addClass('lighten-5');
+                $('#menu').removeClass('transparent');
+                $('.brand-logo').addClass('texto-negro');
+                $('ul li a').addClass('texto-negro');
+
+            } else {
+                $('#menu').removeClass('grey');
+                $('#menu').removeClass('lighten-5');
+                $('#menu').addClass('transparent');
+                $('.brand-logo').removeClass('texto-negro');
+                $('ul li a').removeClass('texto-negro');
+
+            }
+        });
+
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    </script>
+
+    <!-- tooltip -->
+    <script>
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+    </script>
+>>>>>>> fdb95b018331102a80c1e3c19e207f0fc6c8afd6
 
     <title>[ osmak ]</title>
 </head>
@@ -36,11 +73,12 @@
     <div class="navbar-fixed" style="z-index:5000;position: absolute;">
         <nav id="menu" class="transparent" data-spy="affix" data-offset-top="150">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">O S M A K</a>
+                <a href="#" class="brand-logo center-align">O S M A K</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a class="montserrat" href="#home">Home</a></li>
-                    <li><a class="montserrat" href="#whoami">¿Quién soy?</a></li>
-                    <li><a class="montserrat" href="#formacion">Formación</a></li>
+                    <li><a class="roboto" href="#home">Home</a></li>
+                    <li><a class="roboto" href="#whoami">¿Quién soy?</a></li>
+                    <li><a class="roboto" href="#formacion">Formación</a></li>
+                    <li><a href="#portfolio" class="roboto">Proyectos</a></li>
                 </ul>
             </div>
         </nav>
@@ -51,14 +89,18 @@
             <center>
                 <h1 class="centrar montserrat">O S M A K</h1><br>
                 <div class="">
-                    <a class="botones btn-floating btn-large waves-effect waves-light white tooltipped"
+                    <a href="https://twitter.com/osmvk"
+                        class="botones btn-floating btn-large waves-effect waves-light white tooltipped"
                         data-position="bottom" data-delay="50" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a class="botones btn-floating btn-large waves-effect waves-light white tooltipped"
+                    <a href="https://github.com/0smak"
+                        class="botones btn-floating btn-large waves-effect waves-light white tooltipped"
                         data-position="bottom" data-delay="50" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
-                    <a class="botones btn-floating btn-large waves-effect waves-light white tooltipped"
+                    <a href="https://t.me/osmak"
+                        class="botones btn-floating btn-large waves-effect waves-light white tooltipped"
                         data-position="bottom" data-delay="50" data-tooltip="Telegram"><i
                             class="fab fa-telegram-plane"></i></a>
-                    <a class="botones btn-floating btn-large waves-effect waves-light white tooltipped"
+                    <a href="mailto:osmak@protonmail.com"
+                        class="botones btn-floating btn-large waves-effect waves-light white tooltipped"
                         data-position="bottom" data-delay="50" data-tooltip="e-mail"><i class="fas fa-envelope"></i></a>
                 </div>
             </center>
@@ -85,7 +127,8 @@
                         <br><br>Actualmente estoy aprendiendo difentes cosas como desarrollo web en JavaScript
                         utilizando MySQL, Express, Angular2 y NodeJS, hasta octubre de 2018 usaba Apache, MySQL y
                         PHP<br>
-                        También estoy dedicando mi tiempo a aprender Android Studio y el desarrollo de apps para Android
+                        También estoy dedicando mi tiempo a aprender Android Studio y el desarrollo de apps para
+                        Android
                         en el lenguaje Kotlin
                     </p>
 
@@ -209,26 +252,44 @@
             </div>
         </div>
     </section>
-    <section class="secciones white">
+    <section class="secciones white" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col s12">
                     <center>
+<<<<<<< HEAD
                         <h3 class="montserrat"><i class="material-icons md-48"></i><span>Algunos de mis proyectos y
                                 portfolio <span class="badge yellow texto-negro new" data-badge-caption="">TO-DO: FIX
                                     RESPONSIVE</span></span></h3>
+=======
+                        <h3 class="montserrat"><i class="material-icons md-48"></i><span>Algunos proyectos y portfolio
+>>>>>>> fdb95b018331102a80c1e3c19e207f0fc6c8afd6
                     </center>
 
                     <ul class="collapsible">
                         <li>
-                            <div class="collapsible-header"><img style="margin-right:15px;" width="36px" height="36px"
-                                    src="https://i.imgur.com/AX5nJpr.png" alt="Logo Pokemon Go to Old Android"><span
-                                    style="font-size:24px;"> Pokemon GO to Old
-                                    Android &nbsp;<span class="badge red new" data-badge-caption="">Anticuado /
-                                        Abandonado</span></span><span class="badge orange new"
-                                    data-badge-caption="">JAVA</span></div>
+                            <div class="collapsible-header">
+                                <img class="hide-on-med-and-down" style="margin-right:15px;" width="36px" height="36px"
+                                    src="https://i.imgur.com/AX5nJpr.png" alt="Logo Pokemon Go to Old Android">
+
+                                <span class="titulo-portfolio"> Pokemon GO to Old Android &nbsp;
+                                    <span class="badge red new hide-on-med-and-down" data-badge-caption="">Anticuado /
+                                        Abandonado</span>
+                                </span>
+                                <span class="badge orange new hide-on-med-and-down" data-badge-caption="">JAVA</span>
+                            </div>
                             <div class="collapsible-body"><span>
                                     <div class="row">
+                                        <div class="col s6">
+                                            <span class="badge red new hide-on-large-only center-align"
+                                                data-badge-caption="">Anticuado
+                                                / Abandonado</span>
+
+                                        </div>
+                                        <div class="col s6">
+                                            <span class="badge orange new hide-on-large-only center-align"
+                                                data-badge-caption="">JAVA</span>
+                                        </div>
                                         <div class="col s12 m6">
                                             <center>
                                                 <img class="responsive-img" src="https://i.imgur.com/S1fFP1e.png">
@@ -253,17 +314,28 @@
                             </div>
                         </li>
                         <li>
-                            <div class="collapsible-header"><img
+                            <div class="collapsible-header"><img class="hide-on-med-and-down"
                                     src="https://instagram.fmad8-1.fna.fbcdn.net/vp/6d8265e780032d9f57648841024e8085/5D0CB7AA/t51.2885-19/s150x150/50725994_449272882276850_4594264149311094784_n.jpg?_nc_ht=instagram.fmad8-1.fna.fbcdn.net"
                                     style="border-radius:50%;margin-right:15px;" width="36px" height="36px"><span
-                                    style="font-size:24px;"> Flexer* Clothing</span><span class="badge blue new"
-                                    data-badge-caption="">WEB DESIGN</span></div>
-                            <div class="collapsible-body"><span>Desarrollo web para la tienda de ropa online Flexer*
+                                    style="font-size:24px;">
+                                    Flexer* Clothing</span><span class="badge blue new hide-on-med-and-down"
+                                    data-badge-caption="">WEB
+                                    DESIGN</span></div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <span class="badge blue new hide-on-large-only" data-badge-caption="">WEB
+                                            DESIGN</span>
+                                    </div>
+                                </div>
+                                <span>Desarrollo web para la tienda de ropa online Flexer*
                                     Clothing usando la api de bigcartel.<br><br>
                                     <center><img src="https://i.imgur.com/bwFXLaQ.png" width="90%;"></center>
-                                </span></div>
+                                </span>
+                            </div>
                         </li>
                         <li>
+<<<<<<< HEAD
                             <div class="collapsible-header"><img src="https://i.imgur.com/RuOF4fi.png"
                                     style="margin-right:15px;" width="36px" height="21.34px"><span
                                     style="font-size:24px;">
@@ -271,19 +343,47 @@
                                         data-badge-caption="">Abandonado</span></span> <span class="badge blue new"
                                     data-badge-caption="">PHP / JS (front-end)</span></div>
                             <div class="collapsible-body"><span>Minijuego basado en el famoso cookie clicker pero con
+=======
+                            <div class="collapsible-header"><img class="hide-on-med-and-down"
+                                    src="https://i.imgur.com/RuOF4fi.png" style="margin-right:15px;" width="36px"
+                                    height="21.34px"><span style="font-size:24px;">
+                                    GazpachoGame &nbsp;<span class="badge red new hide-on-med-and-down"
+                                        data-badge-caption="">Abandonado</span></span>
+                                <span class="badge blue new hide-on-med-and-down" data-badge-caption="">PHP / JS
+                                    (front-end)</span></div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s6"><span class="badge red new hide-on-large-only"
+                                            data-badge-caption="">Abandonado</span></div>
+                                    <div class="col s6"><span class="badge blue new hide-on-large-only"
+                                            data-badge-caption="">PHP / JS
+                                            (front-end)</span></div>
+                                </div>
+                                <span>Minijuego basado en el famoso cookie clicker pero con
+>>>>>>> fdb95b018331102a80c1e3c19e207f0fc6c8afd6
                                     gazpacho.<br><br>
-                                </span></div>
+                                </span>
+                            </div>
                         </li>
                         <li>
                             <div class="collapsible-header"><span style="font-size:24px;">
-                                    <i class="fas fa-robot"></i> osmakBOT (Telegram)&nbsp;<span
-                                        class="badge yellow new texto-negro"
-                                        data-badge-caption="">Desactualizado</span></span> <span
-                                    class="badge purple new" data-badge-caption="">Python</span></div>
+                                    <i class="fas fa-robot hide-on-med-and-down"></i> osmakBOT (Telegram)&nbsp;<span
+                                        class="badge yellow new texto-negro hide-on-med-and-down"
+                                        data-badge-caption="">Desactualizado</span></span>
+                                <span class="badge purple new hide-on-med-and-down" data-badge-caption="">Python</span>
+                            </div>
                             <div class="collapsible-body"><span>
+                                    <div class="row">
+                                        <div class="col s6"><span
+                                                class="badge yellow new texto-negro hide-on-large-only"
+                                                data-badge-caption="">Desactualizado</span></div>
+                                        <div class="col s6"><span class="badge purple new hide-on-large-only"
+                                                data-badge-caption="">Python</span></div>
+                                    </div>
                                     Bot simple en python, muestran los dias restantes para el festival Dreambeach de
                                     2018 (desactualizado) y envia foto del cartel.<br>
-                                    Comando para pokemon showdown mediante web scrapping y muestra tus resultados (tiene
+                                    Comando para pokemon showdown mediante web scrapping y muestra tus resultados
+                                    (tiene
                                     bugs)
                                     <br><br>
 
@@ -321,14 +421,45 @@
                                 </span>
                             </div>
                         </li>
+<<<<<<< HEAD
+=======
+                        <li>
+                            <div class="collapsible-header"><span style="font-size:24px;">
+                                    <img src="https://i.imgur.com/7WAd9Zx.png" class="hide-on-med-and-down" width="32px" height="auto"
+                                        style="margin-right:15px"> MIÑANOX</span> <span
+                                    class="badge yellow texto-negro new hide-on-med-and-down" data-badge-caption="">JavaScript</span></div>
+                            <div class="collapsible-body"><span>
+                                    <div class="row">
+                                        <div class="col s12"><span
+                                            class="badge yellow texto-negro new hide-on-large-only" data-badge-caption="">JavaScript</span></div>
+                                    </div>
+                                    Juego presentado como candidatura en el concurso de <a
+                                        href="https://coredumped.es">Core Dumped</a>, Spaguetti Code, en el que tienes
+                                    una cabeza de Miñano, profesor y Dios de la ETSISI y puedes jugar a minijuegos,
+                                    aunque solo hay uno programado, el MiñanoClicker.<br>El juego tiene sistema de
+                                    skins, monedas y cafeina.
+                                    <br><br>
+                                    <div class="row">
+                                        <div class="col s12 m6"><img class="responsive-img"
+                                                src="https://camo.githubusercontent.com/6a06be31c226792a1941524e0bc53d3b74f085b0/68747470733a2f2f692e696d6775722e636f6d2f4d65586d3435562e706e67">
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </li>
+>>>>>>> fdb95b018331102a80c1e3c19e207f0fc6c8afd6
                     </ul>
-
                 </div>
             </div>
-
         </div>
     </section>
+    <section class="secciones degradado-bg">
+        <div class="center-align"><span style="font-size:24px;">© osmak</span><br><span
+                style="font-size:14px;padding:5px!important;">[ <a style="text-decoration: none; color: white;"
+                    href="https://twitter.com/osmvk">twitter</a> · <a style="text-decoration: none; color: white;"
+                    href="https://github.com/0smak">github</a> · <a style="text-decoration: none; color: white;"
+                    href="https://t.me/osmak">telegram</a> ]</span></div>
+    </section>
 </body>
-
 
 </html>
