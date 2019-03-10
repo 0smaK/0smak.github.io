@@ -11,6 +11,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media only screen and (max-width: 700px) {
+    .brand-logo {
+        margin-top: 5px;
+    }
+}
+
 body {
     margin: 0;
 }
@@ -23,7 +29,6 @@ body {
     transition: 0.5s;
 }
 
-<<<<<<< HEAD
 .botonsubir{
     border-left: 2px solid #8a0e39;
     border-right: 2px solid #8a0e39;
@@ -31,8 +36,6 @@ body {
     border-bottom: 2px solid #8a0e39;
 }
 
-=======
->>>>>>> fdb95b018331102a80c1e3c19e207f0fc6c8afd6
 .affix {
     position: fixed;
     top: 0;
