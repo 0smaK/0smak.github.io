@@ -1,5 +1,13 @@
 body {
     background-color: white;
+    max-width: 100%;
+    margin:0;
+}
+
+@media only screen and (max-width: 700px) {
+    .brand-logo {
+        margin-top: 5px;
+    }
 }
 
 .nav ul a {
@@ -9,12 +17,6 @@ body {
 .brand-logo {
     padding-left: 20px !important;
     font-family: 'Montserrat', sans-serif;
-}
-
-@media only screen and (max-width: 700px) {
-    .brand-logo {
-        margin-top: 5px;
-    }
 }
 
 body {
@@ -51,7 +53,7 @@ body {
 .secciones {
     height: auto;
     padding: 40px 20px 40px 20px;
-    display: table;
+    display: block;
     width: 100%;
 }
 
@@ -71,6 +73,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 .titulo-portfolio {
     font-size: 24px;

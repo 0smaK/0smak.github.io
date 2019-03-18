@@ -1,3 +1,5 @@
+
+
 #app-cover {
     position: relative;
     display: block;
@@ -6,6 +8,30 @@
     width: 430px;
     height: 100px;
     margin: -4px auto;
+}
+
+@media only screen and (max-width: 1215px) {
+    #app-cover {
+        -ms-transform: scale(0.8) translateX(-100px);
+        -webkit-transform: scale(0.8) translateX(-100px);
+        transform: scale(0.8)  translateX(-100px);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #app-cover {
+        -ms-transform: scale(0.65) translateX(-50px);
+        -webkit-transform: scale(0.65) translateX(-50px);
+        transform: scale(0.65)  translateX(-50px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #app-cover {
+        -ms-transform: scale(0.6) translateX(-100px);
+        -webkit-transform: scale(0.6) translateX(-100px);
+        transform: scale(0.6)  translateX(-100px);
+    }
 }
 
 #bg-artwork {
@@ -283,10 +309,7 @@
     transition: 0.2s ease all;
 }
 
-.button-mp:hover {
-    background-color: #d6d6de;
-}
 
 .button-mp:hover i {
-    color: #fff;
+    color: #000;
 }
